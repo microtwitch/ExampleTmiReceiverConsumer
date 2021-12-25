@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  tmi-consumer:
+    image: microtwitch/example-tmi-receiver-consumer:latest
+    container_name: tmi-consumer
+
+networks:
+  default:
+    external: true
+    name: tmi
